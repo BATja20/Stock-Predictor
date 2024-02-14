@@ -6,9 +6,9 @@ Coding Challenge meant to solve the prediction of the next 3 values of Stock pri
 ## Features
 - Data Extraction: Selects 10 consecutive data points from CSV files starting from a random timestamp to ensure diverse data sampling.
 - Predictive Analysis: Predicts the next 3 stock price values using the following logic:
-- - n+1: Has the value of the 2nd highest price in the sampled data.
-- - n+2: Is equal to n + half the spread between n and n+1.
-- - n+3: Is equal to n+1 + a quarter of the spread between n+1 and n+2.
+  - n+1: Has the value of the 2nd highest price in the sampled data.
+  - n+2: Is equal to n + half the spread between n and n+1.
+  - n+3: Is equal to n+1 + a quarter of the spread between n+1 and n+2.
 
 ## Getting Started
 
