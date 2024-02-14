@@ -9,7 +9,7 @@ import java.util.Set;
 import static com.google.common.collect.ImmutableSet.toImmutableSet;
 
 /**
- *
+ * The class containing the stock data prediction logic.
  */
 public class StockPredictor {
 

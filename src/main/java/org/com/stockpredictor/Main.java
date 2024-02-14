@@ -19,8 +19,18 @@ import java.util.stream.Stream;
 import static com.google.common.collect.ImmutableList.toImmutableList;
 import static com.google.common.collect.ImmutableSet.toImmutableSet;
 
+/**
+ * Entry point for the Stock Predictor application.
+ */
 public class Main {
 
+    /**
+     * Main method that orchestrates the reading of stock data from CSV files, prediction of future stock values,
+     *  and writing the results.
+     *
+     * @param args command line arguments where args[0] is the path to the directory containing exchange folders,
+     *   and args[1] is the maximum number of files to process per exchange.
+     */
     public static void main(String[] args) {
         if (args.length == 2) {
             Path exchangesFolder = Path.of(args[0]);
@@ -50,6 +60,13 @@ public class Main {
         }
     }
 
+    /**
+     * Finds and collects a limited number of eligible CSV files from each exchange directory within the specified folder.
+     *
+     * @param folder the path to the parent directory containing exchange-specific directories
+     * @param maxFilesPerExchange the maximum number of CSV files to include from each exchange directory
+     * @return a list of eligible CSV files to be processed
+     */
     private static List<File> findEligibleFiles(Path folder, int maxFilesPerExchange) {
         ImmutableList.Builder<File> eligibleFiles = ImmutableList.builder();
         try {
