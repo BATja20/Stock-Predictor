@@ -24,7 +24,7 @@ Coding Challenge meant to solve the prediction of the next 3 values of Stock pri
    mvn clean install
 3. Run the created .jar file or just use the already created one:
    ```bash
-   java -jar Stock-Price-Predictor-1.1-SNAPSHOT.jar <path_to_exchange_folder> <max_files_per_exchange>
+   java -jar Stock-Price-Predictor-1.0-SNAPSHOT.jar <path_to_exchange_folder> <max_files_per_exchange>
    ```
    <path_to_exchange_folder>: Path to the directory containing your exchange-specific CSV files.
    <max_files_per_exchange>: Maximum number of CSV files to process per exchange.
